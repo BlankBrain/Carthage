@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textView: UITextView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("hello")
     }
 
+    @IBAction func getButtonPressed(_ sender: Any) {
+        
+        
+        textView.text = " button pressed"
+            
+        
+    }
+    
 
+    
 }
 
